@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Noir | Luxury Interior Design & Architecture Studio</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Atelier Noir is a premier interior design & architecture studio crafting bespoke residential, commercial, and hospitality sanctuaries defined by timeless materials and architectural precision.">
+  <meta name="keywords" content="interior design studio, luxury architecture, residential design, commercial interiors, 3D visualization, turnkey interior design, Karachi interior designer">
+  <meta property="og:title" content="Atelier Noir | Luxury Interior Design Studio">
+  <meta property="og:description" content="Spaces Designed Around the Way You Live. Bespoke architecture & luxury interior styling.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 fill=%22%231a1918%22>AN</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome / Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Subtle Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-follower" id="cursorFollower"></div>
+
+  <!-- Demo Notice Banner -->
+  <aside class="demo-top-bar" aria-label="Demo Notice">
+    <div class="container demo-top-bar-inner">
+      <span><i class="fa-solid fa-sparkles"></i> <strong>Client Showcase Demo</strong> — Interactive Preview for Luxury Interior & Architecture Studios</span>
+      <a href="#inquiry" class="demo-top-link">Customize for Your Brand <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </aside>
+
+  <!-- Sticky Luxury Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Atelier Noir Home">
+        <span class="logo-mark">ATELIER NOIR</span>
+        <span class="logo-sub">STUDIO ARCHITECTURE & INTERIORS</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#philosophy" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#before-after" class="nav-link">Transformations</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#materials" class="nav-link">Materials</a></li>
+          <li><a href="#inquiry" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline nav-cta-btn" id="openConsultationNav">
+          <span>Book Consultation</span>
+          <i class="fa-solid fa-calendar-arrow-down"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="logo-mark">ATELIER NOIR</div>
+      <button class="mobile-close-btn" id="mobileDrawerClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-item">01. Home</a></li>
+        <li><a href="#philosophy" class="mobile-nav-item">02. The Studio</a></li>
+        <li><a href="#projects" class="mobile-nav-item">03. Selected Projects</a></li>
+        <li><a href="#before-after" class="mobile-nav-item">04. Before & After</a></li>
+        <li><a href="#services" class="mobile-nav-item">05. Design Services</a></li>
+        <li><a href="#visualization" class="mobile-nav-item">06. 3D Visualization</a></li>
+        <li><a href="#process" class="mobile-nav-item">07. Our Process</a></li>
+        <li><a href="#materials" class="mobile-nav-item">08. Materials & Craft</a></li>
+        <li><a href="#founder" class="mobile-nav-item">09. Principal Designer</a></li>
+        <li><a href="#inquiry" class="mobile-nav-item">10. Contact & Inquiries</a></li>
+      </ul>
+
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-primary w-100 mb-3" id="openConsultationMobile">Book Consultation</button>
+        <button class="btn btn-whatsapp-secondary w-100" id="openWhatsappMobile">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </button>
+        <div class="mobile-studio-info mt-4">
+          <p class="text-muted"><i class="fa-solid fa-location-dot"></i> DHA Phase 6 / Clifton, Karachi</p>
+          <p class="text-muted"><i class="fa-solid fa-envelope"></i> contact@ateliernoir-studio.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. CINEMATIC HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-wrapper">
+        <img 
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85" 
+          alt="Luxury modern architectural residence living room" 
+          class="hero-bg-img"
+          loading="eager"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content-container">
+        <div class="hero-content">
+          <div class="hero-tagline-badge animate-fade-in">
+            <span class="badge-dot"></span>
+            <span>Architectural & Interior Design Studio</span>
+          </div>
+
+          <h1 class="hero-title animate-reveal">
+            Transforming Spaces.<br>
+            <em>Defining Lifestyles.</em>
+          </h1>
+
+          <p class="hero-subtitle animate-fade-in-delayed">
+            Thoughtfully designed interiors where spatial architecture, noble materials, and the rhythms of everyday living unite in timeless harmony.
+          </p>
+
+          <div class="hero-cta-group animate-fade-in-delayed">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Our Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-glass" id="heroConsultationBtn">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>Book a Consultation</span>
+            </button>
+            <button class="btn btn-whatsapp-ghost" id="heroWhatsappBtn">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp Us</span>
+            </button>
+          </div>
+
+          <div class="hero-badges-row">
+            <div class="hero-mini-stat">
+              <span class="stat-highlight">120+</span>
+              <span class="stat-caption">Curated Residences</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="hero-mini-stat">
+              <span class="stat-highlight">10+</span>
+              <span class="stat-caption">Years of Mastery</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="hero-mini-stat">
+              <span class="stat-highlight">Bespoke</span>
+              <span class="stat-caption">Turnkey Execution</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#philosophy" class="scroll-indicator" aria-label="Scroll to explore philosophy">
+        <span class="scroll-text">SCROLL TO EXPLORE</span>
+        <span class="scroll-arrow"><i class="fa-solid fa-arrow-down-long"></i></span>
+      </a>
+    </section>
+
+
+    <!-- 2. TRUST / PHILOSOPHY / INTRO & STATS SECTION -->
+    <section class="section philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-lead">
+            <span class="section-eyebrow">THE ATELIER PHILOSOPHY</span>
+            <h2 class="section-title">
+              We design more than interiors.<br>
+              <em>We craft sanctuaries.</em>
+            </h2>
+            <div class="gold-accent-line"></div>
+          </div>
+
+          <div class="philosophy-description">
+            <p class="lead-text">
+              From the first architectural sketch to the bespoke tactile finishes, we create spaces that reflect individuality, purposeful function, and enduring beauty.
+            </p>
+            <p class="body-text">
+              Every residence and commercial space holds an innate emotional resonance. Our multidisciplinary studio combines spatial acoustics, light choreography, and master-crafted materiality to turn structural volumes into immersive living experiences.
+            </p>
+            
+            <div class="philosophy-quote">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <blockquote>
+                “Simplicity is not the lack of clutter, but the mastery of proportion, daylight, and authentic textures.”
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Counter Statistics (Demo Placeholders) -->
+        <div class="stats-strip" id="statsCounterContainer">
+          <div class="stat-card">
+            <div class="stat-number" data-target="10" data-suffix="+">0</div>
+            <div class="stat-label">Years of Experience</div>
+            <div class="stat-sub">Refining spatial artistry</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="120" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+            <div class="stat-sub">Villas, penthouses & offices</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="8" data-suffix=" Cities">0</div>
+            <div class="stat-label">Regional Presence</div>
+            <div class="stat-sub">National & regional clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="95" data-suffix="%">0</div>
+            <div class="stat-label">Client Referrals</div>
+            <div class="stat-sub">Proof of exacting standards</div>
+          </div>
+        </div>
+        <div class="stats-note-badge">
+          <i class="fa-solid fa-circle-info"></i> Interactive Demo Placeholder — Replaced with client's verified achievements upon deployment
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3. FEATURED PROJECTS SHOWCASE -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="section-eyebrow">PORTFOLIO</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-subtitle">Spaces shaped by purpose, noble materials, and quiet restraint.</p>
+          </div>
+          
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs-wrapper">
+            <div class="filter-tabs" role="tablist">
+              <button class="filter-tab active" data-filter="all">All Projects <span class="tab-count">(6)</span></button>
+              <button class="filter-tab" data-filter="residential">Residential <span class="tab-count">(4)</span></button>
+              <button class="filter-tab" data-filter="commercial">Commercial <span class="tab-count">(1)</span></button>
+              <button class="filter-tab" data-filter="hospitality">Hospitality <span class="tab-count">(1)</span></button>
+              <button class="filter-tab" data-filter="office">Office <span class="tab-count">(1)</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Luxury Residence -->
+          <article class="project-card" data-category="residential" data-project-id="p1">
+            <div class="project-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80" 
+                alt="Luxury Residence in DHA Phase 6" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="view-case-study-btn">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+              <div class="project-badge">Residential</div>
+            </div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <span class="project-location"><i class="fa-solid fa-location-dot"></i> DHA Phase 6, Karachi</span>
+                <span class="project-style">Contemporary Luxury</span>
+              </div>
+              <h3 class="project-title">The Grand Courtyard Villa</h3>
+              <p class="project-summary">An expansive family villa structured around internal courtyards, Roman travertine, and floor-to-ceiling glass.</p>
+              <div class="project-tags">
+                <span>Natural Stone</span>
+                <span>Fluted Oak</span>
+                <span>Architectural Lighting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Modern Penthouse -->
+          <article class="project-card" data-category="residential" data-project-id="p2">
+            <div class="project-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80" 
+                alt="Modern Penthouse in Clifton" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="view-case-study-btn">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+              <div class="project-badge">Residential</div>
+            </div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <span class="project-location"><i class="fa-solid fa-location-dot"></i> Clifton, Karachi</span>
+                <span class="project-style">Modern Minimal</span>
+              </div>
+              <h3 class="project-title">Horizon Sky Penthouse</h3>
+              <p class="project-summary">Dual-level penthouse overlooking the coastline, utilizing monolithic microcement and brushed brass accents.</p>
+              <div class="project-tags">
+                <span>Microcement</span>
+                <span>Brushed Brass</span>
+                <span>Panoramic Glass</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Executive Office -->
+          <article class="project-card" data-category="commercial office" data-project-id="p3">
+            <div class="project-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80" 
+                alt="Executive Office in Karachi" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="view-case-study-btn">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+              <div class="project-badge">Commercial / Office</div>
+            </div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <span class="project-location"><i class="fa-solid fa-location-dot"></i> Financial District, Karachi</span>
+                <span class="project-style">Executive Modern</span>
+              </div>
+              <h3 class="project-title">Aethelgard Corporate Headquarters</h3>
+              <p class="project-summary">High-performance executive suites balanced with acoustic timber louvers and curated museum-grade art walls.</p>
+              <div class="project-tags">
+                <span>Acoustic Walnut</span>
+                <span>Smoke Glass</span>
+                <span>Custom Millwork</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Boutique Café -->
+          <article class="project-card" data-category="hospitality" data-project-id="p4">
+            <div class="project-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80" 
+                alt="Boutique Café in Karachi" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="view-case-study-btn">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+              <div class="project-badge">Hospitality</div>
+            </div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <span class="project-location"><i class="fa-solid fa-location-dot"></i> E-Street, Karachi</span>
+                <span class="project-style">Warm Minimalism</span>
+              </div>
+              <h3 class="project-title">Maison Terroir Espresso Bar</h3>
+              <p class="project-summary">Tactile hospitality interior featuring custom terracotta plaster, fluted bar counters, and low-slung ambient illumination.</p>
+              <div class="project-tags">
+                <span>Terracotta</span>
+                <span>Bouclé Seating</span>
+                <span>Soft Ambience</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Modern Family Home -->
+          <article class="project-card" data-category="residential" data-project-id="p5">
+            <div class="project-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80" 
+                alt="Modern Family Home in PECHS" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="view-case-study-btn">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+              <div class="project-badge">Residential</div>
+            </div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <span class="project-location"><i class="fa-solid fa-location-dot"></i> PECHS, Karachi</span>
+                <span class="project-style">Japandi Modern</span>
+              </div>
+              <h3 class="project-title">Komorebi Serene Haven</h3>
+              <p class="project-summary">A calming sanctuary harmonizing Japanese Wabi-Sabi organic warmth with Scandinavian clean architectural joinery.</p>
+              <div class="project-tags">
+                <span>Light Ash Wood</span>
+                <span>Linen Drapes</span>
+                <span>Wabi-Sabi Plaster</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Luxury Master Suite -->
+          <article class="project-card" data-category="residential" data-project-id="p6">
+            <div class="project-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1400&q=80" 
+                alt="Luxury Bedroom Suite in Karachi" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="view-case-study-btn">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+              <div class="project-badge">Residential</div>
+            </div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <span class="project-location"><i class="fa-solid fa-location-dot"></i> Creek Vistas, Karachi</span>
+                <span class="project-style">Contemporary Luxury</span>
+              </div>
+              <h3 class="project-title">The Master Sanctuary</h3>
+              <p class="project-summary">Bespoke headboard wall with integrated ambient backlighting, custom Italian wardrobe suite, and ensuite spa bath.</p>
+              <div class="project-tags">
+                <span>Velvet & Leather</span>
+                <span>Bronze Glass</span>
+                <span>Bespoke Joinery</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-cta-banner">
+          <div class="portfolio-cta-text">
+            <h3>Have a distinctive space in mind?</h3>
+            <p>We work collaboratively with clients from initial concept to turnkey handover.</p>
+          </div>
+          <div class="portfolio-cta-btns">
+            <button class="btn btn-primary" id="portfolioConsultBtn">Discuss Your Space</button>
+            <button class="btn btn-whatsapp-secondary" id="portfolioWhatsappBtn"><i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Quote</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 4. PROJECT CASE STUDY MODAL EXPERIENCE (Dynamic Full-Screen Experience) -->
+    <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalProjectTitle">
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-container">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-scroll-content">
+          <!-- Dynamic Header -->
+          <div class="modal-hero">
+            <img src="" alt="Project Case Study Hero" id="modalHeroImg" class="modal-hero-img">
+            <div class="modal-hero-overlay">
+              <div class="container-fluid modal-header-text">
+                <div class="modal-tags" id="modalBadges"></div>
+                <h2 class="modal-title" id="modalProjectTitle">Project Title</h2>
+                <div class="modal-meta-bar" id="modalMetaBar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body-content">
+            <div class="modal-details-grid">
+              <!-- Left Column: Story, Decisions & Results -->
+              <div class="modal-story-col">
+                <div class="modal-section-block">
+                  <h4 class="modal-block-title">The Client Brief & Vision</h4>
+                  <p id="modalOverview" class="modal-body-p"></p>
+                </div>
+
+                <div class="modal-section-block">
+                  <h4 class="modal-block-title">Key Architectural & Design Decisions</h4>
+                  <ul class="modal-decisions-list" id="modalDecisions"></ul>
+                </div>
+
+                <div class="modal-section-block">
+                  <h4 class="modal-block-title">Project Gallery & Perspectives</h4>
+                  <div class="modal-gallery-grid" id="modalGalleryGrid"></div>
+                </div>
+
+                <div class="modal-section-block">
+                  <h4 class="modal-block-title">The Final Result</h4>
+                  <p id="modalResult" class="modal-body-p"></p>
+                </div>
+              </div>
+
+              <!-- Right Column: Specs, Materials, Palette & CTAs -->
+              <aside class="modal-sidebar-col">
+                <div class="modal-spec-card">
+                  <h4 class="spec-card-heading">Project Specifications</h4>
+                  
+                  <div class="spec-item">
+                    <span class="spec-label">Location</span>
+                    <span class="spec-val" id="modalSpecLocation">—</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Total Area</span>
+                    <span class="spec-val" id="modalSpecArea">—</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Style Direction</span>
+                    <span class="spec-val" id="modalSpecStyle">—</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Scope</span>
+                    <span class="spec-val" id="modalSpecScope">—</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Execution Timeline</span>
+                    <span class="spec-val" id="modalSpecTimeline">—</span>
+                  </div>
+
+                  <hr class="spec-divider">
+
+                  <div class="materials-used-block">
+                    <h5 class="spec-subheading">Selected Materials</h5>
+                    <div class="material-pills" id="modalMaterials"></div>
+                  </div>
+
+                  <div class="palette-block mt-3">
+                    <h5 class="spec-subheading">Curated Color Palette</h5>
+                    <div class="color-palette-row" id="modalColorPalette"></div>
+                  </div>
+
+                  <div class="modal-cta-box">
+                    <h5>Love this transformation?</h5>
+                    <p>Let's create a tailored architectural interior for your home or commercial space.</p>
+                    <button class="btn btn-primary w-100 mb-2" id="modalBookConsultBtn">Book a Consultation</button>
+                    <button class="btn btn-whatsapp-secondary w-100" id="modalWhatsappBtn">
+                      <i class="fa-brands fa-whatsapp"></i> Inquire About This Style
+                    </button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 5. INTERACTIVE BEFORE & AFTER COMPARISON SECTION -->
+    <section class="section before-after-section" id="before-after">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="section-eyebrow">TRANSFORMATIONS</span>
+          <h2 class="section-title">From Vision to Reality</h2>
+          <p class="section-subtitle">
+            Witness the profound power of spatial planning, structural refinement, and luxury materiality. Drag the slider to reveal the before-and-after story.
+          </p>
+        </div>
+
+        <!-- Room Switcher Tabs -->
+        <div class="ba-room-tabs" role="tablist">
+          <button class="ba-tab active" data-ba="living">Living Room Transformation</button>
+          <button class="ba-tab" data-ba="kitchen">Gourmet Kitchen Renovation</button>
+          <button class="ba-tab" data-ba="bedroom">Master Bedroom Suite</button>
+        </div>
+
+        <!-- Draggable Comparison Container -->
+        <div class="ba-comparison-wrapper">
+          <div class="ba-comparison-container" id="baComparison">
+            <!-- After Image (Background) -->
+            <div class="ba-layer ba-after-layer">
+              <img 
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80" 
+                alt="After Transformation: Luxury Living Room" 
+                id="baAfterImg" 
+                class="ba-image"
+              >
+              <span class="ba-badge ba-badge-after">AFTER • ATELIER NOIR EXECUTION</span>
+            </div>
+
+            <!-- Before Image (Clipped Layer) -->
+            <div class="ba-layer ba-before-layer" id="baBeforeLayer" style="width: 50%;">
+              <img 
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80" 
+                alt="Before Transformation: Raw Space" 
+                id="baBeforeImg" 
+                class="ba-image"
+              >
+              <span class="ba-badge ba-badge-before">BEFORE • ORIGINAL CONDITION</span>
+            </div>
+
+            <!-- Draggable Divider Handle -->
+            <div class="ba-handle" id="baHandle" style="left: 50%;" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Before and After Comparison Slider">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-circle">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="ba-handle-line"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transformation Details Dynamic Box -->
+        <div class="ba-details-card" id="baDetailsCard">
+          <div class="ba-detail-item">
+            <span class="detail-label">Project</span>
+            <strong id="baProjectTitle">DHA Phase 6 Residence</strong>
+          </div>
+          <div class="ba-detail-item">
+            <span class="detail-label">Design Interventions</span>
+            <span id="baInterventions">Opened load-bearing walls, installed concealed cove lighting, custom walnut fluting, and Italian porcelain slab flooring.</span>
+          </div>
+          <div class="ba-detail-item">
+            <span class="detail-label">Client Feedback</span>
+            <span id="baFeedback">“The transformation completely altered how our family moves and hosts. It feels three times larger.”</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 6. COMPREHENSIVE SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="section-eyebrow">OUR EXPERTISE</span>
+            <h2 class="section-title">End-to-End Interior Services</h2>
+            <p class="section-subtitle">Disciplined architectural planning matched with bespoke artisan execution.</p>
+          </div>
+          <a href="#inquiry" class="btn btn-outline d-none-mobile">Request Service Brochure</a>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-num">01</div>
+            <div class="service-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+            <h3 class="service-title">Residential Interior Design</h3>
+            <p class="service-desc">Complete interior architecture and interior styling for luxury villas, modern apartments, and custom family compounds.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Spatial zoning & layout optimization</li>
+              <li><i class="fa-solid fa-check"></i> Custom bespoke cabinetry & millwork</li>
+              <li><i class="fa-solid fa-check"></i> Curated luxury furniture & decor</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-num">02</div>
+            <div class="service-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <h3 class="service-title">Commercial & Hospitality Spaces</h3>
+            <p class="service-desc">High-impact branded environments for boutique cafes, restaurants, flagship retail, and upscale hotel lounges.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Experiential brand-aligned aesthetics</li>
+              <li><i class="fa-solid fa-check"></i> Commercial-grade durable materiality</li>
+              <li><i class="fa-solid fa-check"></i> Customer journey flow & lighting scenes</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-num">03</div>
+            <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3 class="service-title">Executive Office Design</h3>
+            <p class="service-desc">Sophisticated corporate headquarters and boardrooms balancing ergonomic luxury, privacy, and team collaboration.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Acoustic timber paneling & glass partitions</li>
+              <li><i class="fa-solid fa-check"></i> High-tech integrated meeting suites</li>
+              <li><i class="fa-solid fa-check"></i> Executive lounges & wellness zones</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-num">04</div>
+            <div class="service-icon"><i class="fa-solid fa-hammer"></i></div>
+            <h3 class="service-title">Renovation & Structural Remodeling</h3>
+            <p class="service-desc">Reimagining dated properties by reconfiguring layouts, upgrading electrical & MEP systems, and modernizing finishes.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Structural wall removal & reinforcement</li>
+              <li><i class="fa-solid fa-check"></i> Luxury bathroom & kitchen overhauls</li>
+              <li><i class="fa-solid fa-check"></i> Facade & architectural opening updates</li>
+            </ul>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-num">05</div>
+            <div class="service-icon"><i class="fa-solid fa-cube"></i></div>
+            <h3 class="service-title">Photorealistic 3D Visualization</h3>
+            <p class="service-desc">State-of-the-art 3D rendering and virtual walk-throughs allowing you to experience every millimeter before a single nail is hammered.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Exact lighting simulation & shadows</li>
+              <li><i class="fa-solid fa-check"></i> Real-world texture & fabric matching</li>
+              <li><i class="fa-solid fa-check"></i> 360-degree spatial panoramas</li>
+            </ul>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-num">06</div>
+            <div class="service-icon"><i class="fa-solid fa-key"></i></div>
+            <h3 class="service-title">Turnkey Interior Execution</h3>
+            <p class="service-desc">Total project management from raw grey structure to final styling, handling contractors, procurement, and handover.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Single point of accountability</li>
+              <li><i class="fa-solid fa-check"></i> Strict timeline & budget governance</li>
+              <li><i class="fa-solid fa-check"></i> White-glove installation & final reveal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 7. 3D VISUALIZATION & CONCEPT SECTION -->
+    <section class="section visualization-section" id="visualization">
+      <div class="container">
+        <div class="vis-grid">
+          <div class="vis-content">
+            <span class="section-eyebrow">PRECISION PLANNING</span>
+            <h2 class="section-title">See Your Space Before It Exists.</h2>
+            <div class="gold-accent-line"></div>
+            <p class="lead-text">
+              We eliminate guesswork. From initial moodboards and spatial ergonomics to hyper-realistic 3D visualization, every detail is refined and approved before construction begins.
+            </p>
+            <div class="vis-points">
+              <div class="vis-point">
+                <div class="vis-point-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h4>Exact Material Simulation</h4>
+                  <p>True-to-life reflections on marble, fluted timber, brass, and velvet lighting scenes.</p>
+                </div>
+              </div>
+              <div class="vis-point">
+                <div class="vis-point-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                <div>
+                  <h4>Zero Surprise Execution</h4>
+                  <p>Eliminate costly on-site modifications by locking in dimensions and architectural junctions in advance.</p>
+                </div>
+              </div>
+              <div class="vis-point">
+                <div class="vis-point-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                <div>
+                  <h4>Complete Construction Drawings</h4>
+                  <p>Detailed MEP, ceiling, floor, joinery, and lighting schedules for flawless on-site contractor execution.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <button class="btn btn-primary" id="visDiscussBtn">Discuss Your Concept</button>
+            </div>
+          </div>
+
+          <!-- Interactive 3D Render vs Executed Comparison -->
+          <div class="vis-media">
+            <div class="vis-card">
+              <div class="vis-toggle-header">
+                <span class="vis-tag"><i class="fa-solid fa-cube"></i> 3D Concept vs Built Reality</span>
+                <div class="vis-view-switcher">
+                  <button class="vis-btn active" data-view="render">3D Concept</button>
+                  <button class="vis-btn" data-view="built">Final Interior</button>
+                </div>
+              </div>
+              
+              <div class="vis-image-wrapper">
+                <img 
+                  src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1400&q=80" 
+                  alt="3D Architectural Visualization Concept" 
+                  class="vis-display-img active" 
+                  id="visRenderImg"
+                >
+                <img 
+                  src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=80" 
+                  alt="Final Built Interior Space" 
+                  class="vis-display-img" 
+                  id="visBuiltImg"
+                >
+                <div class="vis-caption-pill" id="visCaption">
+                  <i class="fa-solid fa-circle-notch fa-spin"></i> Mode: 3D Visualization Phase
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 8. DESIGN PROCESS TIMELINE -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="section-eyebrow">OUR METHODOLOGY</span>
+          <h2 class="section-title">Our Design Process</h2>
+          <p class="section-subtitle">
+            A seamless, transparent journey from initial conversation to the celebratory final reveal.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <!-- Step 1 -->
+          <div class="process-step">
+            <div class="step-badge">
+              <span class="step-num">01</span>
+            </div>
+            <div class="step-card">
+              <span class="step-phase">Phase One</span>
+              <h3 class="step-title">Discovery & Consultation</h3>
+              <p class="step-desc">We listen deeply to your lifestyle, aesthetic aspirations, functional requirements, spatial dynamics, and budget parameters.</p>
+              <div class="step-deliverables">
+                <span>Site Analysis</span>
+                <span>Lifestyle Brief</span>
+                <span>Budget Scope</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step">
+            <div class="step-badge">
+              <span class="step-num">02</span>
+            </div>
+            <div class="step-card">
+              <span class="step-phase">Phase Two</span>
+              <h3 class="step-title">Concept & Moodboards</h3>
+              <p class="step-desc">We develop the holistic creative direction, spatial zoning plans, tactile moodboards, and overarching design narrative.</p>
+              <div class="step-deliverables">
+                <span>Spatial Layouts</span>
+                <span>Moodboards</span>
+                <span>Material Palettes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step">
+            <div class="step-badge">
+              <span class="step-num">03</span>
+            </div>
+            <div class="step-card">
+              <span class="step-phase">Phase Three</span>
+              <h3 class="step-title">Photorealistic 3D Modeling</h3>
+              <p class="step-desc">We render your future interior in hyper-detailed 3D, testing lighting atmospheres, custom millwork, and furniture proportion.</p>
+              <div class="step-deliverables">
+                <span>3D Renders</span>
+                <span>Lighting Scenarios</span>
+                <span>Client Review</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step">
+            <div class="step-badge">
+              <span class="step-num">04</span>
+            </div>
+            <div class="step-card">
+              <span class="step-phase">Phase Four</span>
+              <h3 class="step-title">Materials & Working Drawings</h3>
+              <p class="step-desc">Physical sample boards are prepared, noble stones selected at source, and comprehensive technical drawings issued.</p>
+              <div class="step-deliverables">
+                <span>Physical Samples</span>
+                <span>MEP & Lighting Plans</span>
+                <span>Joinery Details</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-step">
+            <div class="step-badge">
+              <span class="step-num">05</span>
+            </div>
+            <div class="step-card">
+              <span class="step-phase">Phase Five</span>
+              <h3 class="step-title">Site Execution & Craftsmanship</h3>
+              <p class="step-desc">Our dedicated project engineers supervise civil work, joinery fabrication, tiling, MEP routing, and custom finishing with rigorous quality control.</p>
+              <div class="step-deliverables">
+                <span>Site Supervision</span>
+                <span>Milestone Updates</span>
+                <span>Quality Audits</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="process-step">
+            <div class="step-badge">
+              <span class="step-num">06</span>
+            </div>
+            <div class="step-card">
+              <span class="step-phase">Phase Six</span>
+              <h3 class="step-title">Styling & Final Reveal</h3>
+              <p class="step-desc">Furniture installed, artwork hung, scent and soft furnishings layered, and the completed sanctuary presented ready for living.</p>
+              <div class="step-deliverables">
+                <span>White-Glove Styling</span>
+                <span>Handover Pack</span>
+                <span>Post-Care Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 9. MATERIALS & FINISHES GALLERY -->
+    <section class="section materials-section" id="materials">
+      <div class="container">
+        <div class="materials-header">
+          <div class="max-w-600">
+            <span class="section-eyebrow">TACTILITY & CRAFTSMANSHIP</span>
+            <h2 class="section-title">The Details Make the Space</h2>
+            <div class="gold-accent-line"></div>
+          </div>
+          <div class="materials-header-desc">
+            <p>
+              We believe luxury is felt before it is seen. We source authentic natural stones, hand-selected timber veneers, patinated metals, and heritage textiles to compose interiors rich in depth and warmth.
+            </p>
+          </div>
+        </div>
+
+        <div class="materials-showcase-grid">
+          <!-- Material 1 -->
+          <div class="material-card">
+            <div class="material-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?auto=format&fit=crop&w=800&q=80" 
+                alt="Calacatta & Travertine Marble" 
+                class="material-img"
+                loading="lazy"
+              >
+              <div class="material-hover-meta">
+                <span>Origin: Italy / Greece</span>
+              </div>
+            </div>
+            <div class="material-info">
+              <h4>Calacatta & Roman Travertine</h4>
+              <p>Monolithic marble kitchen islands and honed porous travertine wall panels with subtle natural veining.</p>
+            </div>
+          </div>
+
+          <!-- Material 2 -->
+          <div class="material-card">
+            <div class="material-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80" 
+                alt="Fluted Natural White Oak" 
+                class="material-img"
+                loading="lazy"
+              >
+              <div class="material-hover-meta">
+                <span>Origin: European FSC Certified</span>
+              </div>
+            </div>
+            <div class="material-info">
+              <h4>Fluted European White Oak</h4>
+              <p>Custom architectural slatting, concealed doors, and hand-rubbed organic oil finishes that age gracefully.</p>
+            </div>
+          </div>
+
+          <!-- Material 3 -->
+          <div class="material-card">
+            <div class="material-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" 
+                alt="Brushed Champagne Brass" 
+                class="material-img"
+                loading="lazy"
+              >
+              <div class="material-hover-meta">
+                <span>Finish: Hand-Brushed Satin</span>
+              </div>
+            </div>
+            <div class="material-info">
+              <h4>Brushed Champagne Brass</h4>
+              <p>Custom sanitary fittings, cabinet hardware, and recessed shadowline architectural trim.</p>
+            </div>
+          </div>
+
+          <!-- Material 4 -->
+          <div class="material-card">
+            <div class="material-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" 
+                alt="Bouclé & Textured Linen" 
+                class="material-img"
+                loading="lazy"
+              >
+              <div class="material-hover-meta">
+                <span>Origin: Belgium & Italy</span>
+              </div>
+            </div>
+            <div class="material-info">
+              <h4>Bouclé & Raw Textured Linen</h4>
+              <p>Heavyweight natural drapes and curved sculptural seating that invite tactile comfort and acoustic quietude.</p>
+            </div>
+          </div>
+
+          <!-- Material 5 -->
+          <div class="material-card">
+            <div class="material-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=80" 
+                alt="Seamless Microcement" 
+                class="material-img"
+                loading="lazy"
+              >
+              <div class="material-hover-meta">
+                <span>Texture: Warm Matte</span>
+              </div>
+            </div>
+            <div class="material-info">
+              <h4>Seamless Microcement</h4>
+              <p>Continuous floor and wall transitions without grout lines, creating monolithic spa-like wet rooms and modern floors.</p>
+            </div>
+          </div>
+
+          <!-- Material 6 -->
+          <div class="material-card">
+            <div class="material-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" 
+                alt="Handcrafted Zellige Tiles" 
+                class="material-img"
+                loading="lazy"
+              >
+              <div class="material-hover-meta">
+                <span>Artisan: Hand-Glazed Clay</span>
+              </div>
+            </div>
+            <div class="material-info">
+              <h4>Handcrafted Zellige Tiles</h4>
+              <p>Artisanal clay tiles with organic tonal variations that shimmer under ambient grazing lighting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 10. DESIGNER / FOUNDER PROFILE SECTION -->
+    <section class="section founder-section" id="founder">
+      <div class="container">
+        <div class="founder-grid">
+          <div class="founder-image-wrapper">
+            <div class="founder-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80" 
+                alt="Sarah Ahmed, Creative Director & Principal Interior Architect" 
+                class="founder-img"
+                loading="lazy"
+              >
+              <div class="founder-badge">
+                <span class="badge-title">Sarah Ahmed</span>
+                <span class="badge-role">Creative Director & Principal Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="founder-bio">
+            <span class="section-eyebrow">LEADERSHIP & VISION</span>
+            <h2 class="section-title">Meet the Designer</h2>
+            <div class="gold-accent-line"></div>
+
+            <p class="lead-quote">
+              “Good design isn’t simply about how a space looks. It’s about how the space makes you feel, move, breathe, and live.”
+            </p>
+
+            <p class="body-text">
+              With over a decade of experience designing luxury private residences, penthouses, and bespoke hospitality spaces across Pakistan and the region, Sarah brings an architectural discipline blended with refined interior sensibilities.
+            </p>
+
+            <p class="body-text">
+              Her signature aesthetic balances warm minimalism, authentic natural materiality, and precise spatial ergonomics — crafting homes that feel calm, sophisticated, and deeply personal.
+            </p>
+
+            <div class="founder-details-grid">
+              <div class="f-detail">
+                <span class="f-label">Design Philosophy</span>
+                <span class="f-value">Warm Architectural Minimalism</span>
+              </div>
+              <div class="f-detail">
+                <span class="f-label">Specializations</span>
+                <span class="f-value">Luxury Villas, Penthouses & Boutique Commercial</span>
+              </div>
+              <div class="f-detail">
+                <span class="f-label">Studio Base</span>
+                <span class="f-value">Karachi (DHA / Clifton)</span>
+              </div>
+              <div class="f-detail">
+                <span class="f-label">Approach</span>
+                <span class="f-value">Turnkey & Bespoke Custom Joinery</span>
+              </div>
+            </div>
+
+            <div class="founder-actions mt-4">
+              <button class="btn btn-primary" id="founderConsultBtn">Schedule a Discovery Call</button>
+              <button class="btn btn-whatsapp-secondary" id="founderWhatsappBtn">
+                <i class="fa-brands fa-whatsapp"></i> Chat with Studio
+              </button>
+            </div>
+
+            <p class="founder-demo-note mt-3">
+              <small><i class="fa-solid fa-pen-nib"></i> Profile placeholder — easily replaced with the client's biography, real portrait, and studio credentials.</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 11. TESTIMONIALS -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="section-eyebrow">CLIENT PRAISE</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Reflections from patrons who entrusted their most treasured spaces to our care.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              “From the initial 3D concept to the final white-glove styling, the entire journey felt effortless. Atelier Noir turned our DHA villa into a peaceful, light-filled sanctuary that exceeded everything we imagined.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div class="author-info">
+                <strong>M. & R. Hashmi</strong>
+                <span>Private Villa Residence • DHA Phase 6</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card featured">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              “The team’s mastery over materials, acoustic timber slating, and lighting scenes is unparalleled. Our executive office immediately commands prestige whenever international investors visit.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">TK</div>
+              <div class="author-info">
+                <strong>Tariq Khan</strong>
+                <span>Managing Director • Financial District Headquarters</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              “What impressed us most was the zero-surprise execution. The final built penthouse matched the 3D renders down to the millimeter. Their attention to detail is world-class.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AZ</div>
+              <div class="author-info">
+                <strong>Ayesha & Zain</strong>
+                <span>Horizon Sky Penthouse • Clifton</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <span class="badge-demo"><i class="fa-solid fa-check-double"></i> Verified Client Feedback Placeholders</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 12. PROJECT INQUIRY SECTION & FORM -->
+    <section class="section inquiry-section" id="inquiry">
+      <div class="container">
+        <div class="inquiry-grid">
+          <!-- Left Info Column -->
+          <div class="inquiry-info-col">
+            <span class="section-eyebrow">START A CONVERSATION</span>
+            <h2 class="section-title">Let's Design Your Space</h2>
+            <div class="gold-accent-line"></div>
+            
+            <p class="lead-text">
+              Every iconic space begins with a thoughtful dialogue. Share your project parameters, and let’s explore what is possible.
+            </p>
+
+            <div class="inquiry-contact-cards">
+              <div class="inq-card">
+                <div class="inq-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <span class="inq-title">Direct WhatsApp Line</span>
+                  <a href="#" class="inq-link whatsapp-direct-trigger">+92 300 1234567</a>
+                  <span class="inq-sub">Instant response during studio hours (9am - 7pm)</span>
+                </div>
+              </div>
+
+              <div class="inq-card">
+                <div class="inq-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <span class="inq-title">Email Inquiries</span>
+                  <a href="mailto:contact@ateliernoir-studio.com" class="inq-link">contact@ateliernoir-studio.com</a>
+                  <span class="inq-sub">We reply within 24 business hours</span>
+                </div>
+              </div>
+
+              <div class="inq-card">
+                <div class="inq-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="inq-title">Design Studio & Library</span>
+                  <p class="inq-text">Suite 402, Signature Plaza, DHA Phase 6, Karachi, Pakistan</p>
+                  <span class="inq-sub">By appointment only</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form Column -->
+          <div class="inquiry-form-col">
+            <div class="form-wrapper-card">
+              <div class="form-header">
+                <h3>Project Inquiry Form</h3>
+                <p>Fill out the details below to request a tailored consultation.</p>
+              </div>
+
+              <form id="projectInquiryForm" class="inquiry-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="clientName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="clientName" name="clientName" placeholder="e.g. Asad Siddiqui" required>
+                    <span class="field-error" id="nameError">Please enter your name</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="clientPhone">Phone / WhatsApp <span class="required">*</span></label>
+                    <input type="tel" id="clientPhone" name="clientPhone" placeholder="+92 300 0000000" required>
+                    <span class="field-error" id="phoneError">Please provide a valid phone number</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="clientEmail">Email Address <span class="required">*</span></label>
+                    <input type="email" id="clientEmail" name="clientEmail" placeholder="asad@example.com" required>
+                    <span class="field-error" id="emailError">Please enter a valid email</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="projectType">Project Type <span class="required">*</span></label>
+                    <select id="projectType" name="projectType" required>
+                      <option value="" disabled selected>Select project category...</option>
+                      <option value="Residential Villa / House">Residential Villa / House</option>
+                      <option value="Penthouse / Apartment">Penthouse / Apartment</option>
+                      <option value="Commercial / Hospitality">Commercial / Hospitality</option>
+                      <option value="Corporate Office">Corporate Office</option>
+                      <option value="Full Renovation & Remodel">Full Renovation & Remodel</option>
+                      <option value="3D Visualization Only">3D Visualization Only</option>
+                    </select>
+                    <span class="field-error" id="typeError">Please select a project type</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="projectLocation">Project Location <span class="required">*</span></label>
+                    <input type="text" id="projectLocation" name="projectLocation" placeholder="e.g. DHA Phase 6, Clifton, Islamabad" required>
+                    <span class="field-error" id="locError">Please specify project location</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="projectArea">Approximate Area (Sq. Ft)</label>
+                    <input type="text" id="projectArea" name="projectArea" placeholder="e.g. 4,500 sq ft or 1,000 sq yards">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="budgetRange">Estimated Investment Range</label>
+                  <select id="budgetRange" name="budgetRange">
+                    <option value="Not Specified">Select budget range (Optional)...</option>
+                    <option value="PKR 3M - 7M (Essential Styling / Single Floor)">PKR 3M - 7M (Essential Styling / Single Floor)</option>
+                    <option value="PKR 8M - 15M (Full Apartment / Partial Villa)">PKR 8M - 15M (Full Apartment / Partial Villa)</option>
+                    <option value="PKR 15M - 30M+ (Luxury Full Villa / Turnkey)">PKR 15M - 30M+ (Luxury Full Villa / Turnkey)</option>
+                    <option value="Bespoke High-End Commercial">Bespoke High-End Commercial</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectMessage">Tell Us About Your Vision</label>
+                  <textarea id="projectMessage" name="projectMessage" rows="4" placeholder="Describe the space, timeline, preferred style, or any architectural requirements..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary w-100" id="submitInquiryBtn">
+                    <span>Request a Consultation</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+
+                <div class="form-whatsapp-alternative">
+                  <span>Prefer an instant chat?</span>
+                  <button type="button" class="whatsapp-inline-btn" id="inquiryWhatsappFast">
+                    <i class="fa-brands fa-whatsapp"></i> Chat directly on WhatsApp
+                  </button>
+                </div>
+              </form>
+
+              <!-- Success Notification State -->
+              <div class="form-success-state" id="formSuccessState">
+                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>Inquiry Received with Thanks</h3>
+                <p>Thank you, <strong id="successClientName">Client</strong>. Your project inquiry has been logged. Our principal designer will review your details and contact you within 24 hours.</p>
+                <div class="success-actions">
+                  <button class="btn btn-outline" id="resetInquiryFormBtn">Submit Another Request</button>
+                  <button class="btn btn-whatsapp-secondary" id="successWhatsappBtn">
+                    <i class="fa-brands fa-whatsapp"></i> Speed Up via WhatsApp
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 14. BOOK CONSULTATION MODAL -->
+    <div class="consult-modal" id="consultModal" aria-hidden="true" role="dialog" aria-labelledby="consultModalTitle">
+      <div class="modal-backdrop" id="consultBackdrop"></div>
+      <div class="consult-modal-container">
+        <button class="modal-close-btn" id="consultCloseBtn" aria-label="Close Consultation Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="consult-modal-header">
+          <span class="modal-eyebrow">RESERVE YOUR TIME</span>
+          <h3 id="consultModalTitle">Book a Design Consultation</h3>
+          <p>Schedule a private discovery session with our senior interior architects.</p>
+        </div>
+
+        <form id="quickConsultForm" class="consult-form" novalidate>
+          <div class="form-group">
+            <label for="consultName">Your Name <span class="required">*</span></label>
+            <input type="text" id="consultName" name="consultName" placeholder="Full Name" required>
+            <span class="field-error" id="consultNameError">Please enter your name</span>
+          </div>
+
+          <div class="form-group">
+            <label for="consultPhone">Phone / WhatsApp <span class="required">*</span></label>
+            <input type="tel" id="consultPhone" name="consultPhone" placeholder="+92 300 0000000" required>
+            <span class="field-error" id="consultPhoneError">Please enter your phone</span>
+          </div>
+
+          <div class="form-group">
+            <label for="consultType">Project Scope</label>
+            <select id="consultType" name="consultType">
+              <option value="Residential Interior">Residential Interior</option>
+              <option value="Commercial Space">Commercial Space</option>
+              <option value="Full Villa Renovation">Full Villa Renovation</option>
+              <option value="Office Design">Executive Office</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="consultPref">Preferred Contact Method</label>
+            <div class="radio-pill-group">
+              <label class="radio-pill">
+                <input type="radio" name="contactMethod" value="WhatsApp" checked>
+                <span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="contactMethod" value="Phone Call">
+                <span><i class="fa-solid fa-phone"></i> Phone Call</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="contactMethod" value="Studio Meeting">
+                <span><i class="fa-solid fa-building"></i> Studio Visit</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="consultMessage">Brief Note on your Project (Optional)</label>
+            <textarea id="consultMessage" name="consultMessage" rows="2" placeholder="Location, timeline, or key questions..."></textarea>
+          </div>
+
+          <div class="consult-modal-buttons">
+            <button type="submit" class="btn btn-primary w-100 mb-2" id="submitConsultBtn">
+              <span>Submit Request</span>
+            </button>
+            <button type="button" class="btn btn-whatsapp-secondary w-100" id="consultDirectWhatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Instant Chat on WhatsApp
+            </button>
+          </div>
+        </form>
+
+        <div class="consult-success-view" id="consultSuccessView">
+          <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h4>Consultation Request Received</h4>
+          <p>Thank you! Your private consultation request has been confirmed. Our design team will reach out via your preferred method shortly.</p>
+          <button class="btn btn-outline mt-3" id="closeConsultSuccessBtn">Close</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 15. GALLERY / INSTAGRAM-STYLE EDITORIAL MASONRY -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="section-eyebrow">EDITORIAL SHOWCASE</span>
+          <h2 class="section-title">Follow Our Work</h2>
+          <p class="section-subtitle">
+            An intimate glimpse into our ongoing projects, bespoke furniture details, and material studies.
+          </p>
+        </div>
+
+        <div class="editorial-masonry-grid">
+          <!-- Item 1 -->
+          <div class="masonry-item item-tall">
+            <img 
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" 
+              alt="Linen Drapery and Japandi Minimalist Living Room" 
+              class="masonry-img"
+              loading="lazy"
+            >
+            <div class="masonry-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span class="masonry-caption">Natural Lighting & Japandi Form</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="masonry-item">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" 
+              alt="Monolithic Bathroom Vanity" 
+              class="masonry-img"
+              loading="lazy"
+            >
+            <div class="masonry-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span class="masonry-caption">Monolithic Travertine Vanity</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="masonry-item">
+            <img 
+              src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" 
+              alt="Gourmet Minimalist Kitchen Detail" 
+              class="masonry-img"
+              loading="lazy"
+            >
+            <div class="masonry-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span class="masonry-caption">Smoked Oak & Brass Details</span>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="masonry-item item-tall">
+            <img 
+              src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" 
+              alt="Architectural Staircase & Double Height Glass" 
+              class="masonry-img"
+              loading="lazy"
+            >
+            <div class="masonry-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span class="masonry-caption">Cantilevered Floating Stairs</span>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="masonry-item">
+            <img 
+              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+              alt="Exterior Villa Architecture" 
+              class="masonry-img"
+              loading="lazy"
+            >
+            <div class="masonry-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span class="masonry-caption">Seamless Indoor-Outdoor Flow</span>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="masonry-item">
+            <img 
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" 
+              alt="Luxury Terrace & Pool Lounge" 
+              class="masonry-img"
+              loading="lazy"
+            >
+            <div class="masonry-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span class="masonry-caption">Reflecting Pool Lounge</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-footer-cta text-center mt-5">
+          <a href="#projects" class="btn btn-outline">
+            <span>Explore All 120+ Curated Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 16. FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-header-side">
+            <span class="section-eyebrow">COMMON INQUIRIES</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="gold-accent-line"></div>
+            <p class="body-text">
+              Everything you need to know about our design philosophy, execution protocols, and consultation workflow.
+            </p>
+            <div class="faq-help-box mt-4">
+              <h4>Have a specific query?</h4>
+              <p>Speak directly with our architectural coordinator on WhatsApp.</p>
+              <button class="btn btn-whatsapp-secondary btn-sm" id="faqWhatsappBtn">
+                <i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="faq-accordion-side">
+            <div class="faq-accordion" id="faqAccordion">
+              <!-- Item 1 -->
+              <div class="faq-item active">
+                <button class="faq-trigger" aria-expanded="true">
+                  <span class="faq-question">How does the interior design process work?</span>
+                  <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-body">
+                    We follow a structured 6-phase journey: Discovery Consultation, Concept & Spatial Zoning, Photorealistic 3D Visualization, Material & Technical Working Drawings, On-site Execution Supervision, and White-Glove Handover. Every milestone requires your sign-off before proceeding.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false">
+                  <span class="faq-question">Do you provide 3D visualizations before construction?</span>
+                  <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-body">
+                    Yes. We create hyper-realistic 3D renders with exact lighting simulations, material reflections, and actual furniture scale. You will see precisely how your space will look, feel, and function before any civil or joinery work commences.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false">
+                  <span class="faq-question">Do you handle complete turnkey interior execution?</span>
+                  <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-body">
+                    Yes. We offer complete turnkey services where we manage all contractors, custom joinery workshops, stone fabricators, MEP technicians, and white-glove styling. You have a single dedicated studio point of contact responsible for timeline and quality control.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false">
+                  <span class="faq-question">Do you work on both residential and commercial projects?</span>
+                  <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-body">
+                    Our portfolio spans luxury private villas, penthouses, and apartments, as well as prestigious corporate headquarters, executive boardrooms, boutique cafes, and upscale hospitality lounges.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false">
+                  <span class="faq-question">Can you work with an existing furnished space or renovation?</span>
+                  <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-body">
+                    Absolutely. We frequently undertake full renovations, structural remodeling (opening walls, expanding windows), and phased room upgrades while respecting the architectural integrity of the existing structure.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false">
+                  <span class="faq-question">How can I request a consultation and quote?</span>
+                  <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-body">
+                    You can submit the Project Inquiry Form above, book a consultation slot, or initiate a direct chat with our studio via WhatsApp at +92 300 1234567. We will schedule a site visit or studio discovery session.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 17. FINAL DRAMATIC CALL TO ACTION -->
+    <section class="section final-cta-section" id="final-cta">
+      <div class="final-cta-bg">
+        <img 
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85" 
+          alt="Luxury Architecture and Interior Background" 
+          class="final-cta-img"
+          loading="lazy"
+        >
+        <div class="final-cta-overlay"></div>
+      </div>
+
+      <div class="container final-cta-content text-center">
+        <span class="final-cta-eyebrow">YOUR NEXT CHAPTER</span>
+        <h2 class="final-cta-title">
+          Your Space Has Potential.<br>
+          <em>Let’s Discover It Together.</em>
+        </h2>
+        <p class="final-cta-sub">
+          Tell us about your project and let’s create an architectural sanctuary that feels uniquely and effortlessly yours.
+        </p>
+
+        <div class="final-cta-btns">
+          <button class="btn btn-primary btn-lg" id="finalStartProjectBtn">
+            <span>Start Your Project</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button class="btn btn-whatsapp-lg" id="finalWhatsappBtn">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp the Studio</span>
+          </button>
+        </div>
+
+        <div class="final-guarantee-row">
+          <span><i class="fa-solid fa-check"></i> Bespoke Architectural Plans</span>
+          <span><i class="fa-solid fa-check"></i> Photorealistic 3D Renders</span>
+          <span><i class="fa-solid fa-check"></i> Turnkey Execution Mastery</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- 18. SOPHISTICATED FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-col footer-brand-col">
+        <div class="footer-logo">
+          <span class="logo-mark">ATELIER NOIR</span>
+          <span class="logo-sub">STUDIO ARCHITECTURE & INTERIORS</span>
+        </div>
+        <p class="footer-tagline">
+          “Spaces designed around the way you live.”
+        </p>
+        <p class="footer-desc">
+          A multidisciplinary interior architecture practice delivering timeless, material-focused residential and commercial sanctuaries.
+        </p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#philosophy">The Studio & Philosophy</a></li>
+          <li><a href="#projects">Selected Projects</a></li>
+          <li><a href="#before-after">Before & After</a></li>
+          <li><a href="#services">Design Services</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#materials">Materials & Finishes</a></li>
+          <li><a href="#founder">Principal Designer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Specializations</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Luxury Villa Design</a></li>
+          <li><a href="#services">Penthouse Remodeling</a></li>
+          <li><a href="#services">Executive Offices</a></li>
+          <li><a href="#services">Boutique Hospitality</a></li>
+          <li><a href="#services">Photorealistic 3D Rendering</a></li>
+          <li><a href="#services">Custom Joinery & Millwork</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact-col">
+        <h4 class="footer-heading">Studio Inquiries</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Suite 402, Signature Plaza, DHA Phase 6, Karachi, Pakistan</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+923001234567">+92 300 1234567</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="#" class="whatsapp-direct-trigger">+92 300 1234567 (WhatsApp)</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:contact@ateliernoir-studio.com">contact@ateliernoir-studio.com</a>
+        </div>
+
+        <div class="footer-badge-demo">
+          <small><i class="fa-solid fa-circle-check"></i> Demo Studio Prototype • Configurable</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Atelier Noir Studio. All Rights Reserved. Designed for Luxury Architecture & Interior Presentation.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span class="sep">•</span>
+          <a href="#">Terms of Engagement</a>
+          <span class="sep">•</span>
+          <a href="#">Studio Blueprint</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <div class="floating-whatsapp-container" id="floatingWhatsapp">
+    <div class="whatsapp-tooltip">
+      <span>Chat with Lead Designer</span>
+    </div>
+    <button class="floating-whatsapp-btn" id="floatingWhatsappBtn" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="online-indicator"></span>
+    </button>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive">
+    <div class="toast-icon"><i class="fa-solid fa-check"></i></div>
+    <div class="toast-body">
+      <strong id="toastTitle">Success</strong>
+      <p id="toastMessage">Your message has been sent.</p>
+    </div>
+    <button class="toast-close" id="toastCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
